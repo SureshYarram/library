@@ -17,11 +17,13 @@ export const Navbar = () => {
             <button className="history"> Link to history here  </button>  */}
         {/* Home component will have `/` route and classname as `home`  */}
 
-      <Link className="home" to="/">HOME</Link>
-      <Link className="mystrey" to="/mystrey">Mystrey</Link>
-      <Link className="technology" to="/technology">Technology</Link>
-      <Link className="mythology" to="/mythology">Mythology</Link>
-      <Link className="history" to="/history">History</Link>
+        <div className="navbar">
+        <Link to='/'>Home</Link>
+        <Link to={`/section/${'History'}`}>History</Link>
+        <Link to={`/section/${'Technology'}`}>Technology</Link>
+        <Link to={`/section/${'Mythology'}`}>Mythology</Link>
+        <Link to={`/section/${'Mystery'}`}>Mystery</Link>
+    </div>
       </div>
     </>
   );
